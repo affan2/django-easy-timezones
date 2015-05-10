@@ -44,6 +44,7 @@ class EasyTimezoneMiddleware(object):
                 tz = db.time_zone_by_addr(ip)
 
         if tz:
+            request.session['django_timezone'] = tz
             timezone.activate(tz)
             detected_timezone.send(sender=get_user_model(), instance=request.user, timezone=tz)
         else:
