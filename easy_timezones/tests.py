@@ -9,6 +9,7 @@ import os
 from .middleware import load_db, load_db_settings, EasyTimezoneMiddleware
 from .utils import get_ip_address_from_request, is_valid_ip, is_local_ip
 
+
 class TimezoneTests(TestCase):
     
     def test_basic_addition(self):

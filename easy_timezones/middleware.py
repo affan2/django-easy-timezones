@@ -14,6 +14,7 @@ db_loaded = False
 db = None
 db_v6 = None
 
+
 def load_db_settings():
     GEOIP_DATABASE = getattr(settings, 'GEOIP_DATABASE', 'GeoLiteCity.dat')
 
@@ -33,7 +34,9 @@ def load_db_settings():
 
     return (GEOIP_DATABASE, GEOIPV6_DATABASE)
 
+
 load_db_settings()
+
 
 def load_db():
 

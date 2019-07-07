@@ -5,6 +5,7 @@ from django.template import RequestContext, Template, Context
 
 from datetime import datetime
 
+
 def with_tz(request):
     """
     Get the time with TZ enabled
@@ -16,6 +17,7 @@ def with_tz(request):
     c = RequestContext(request)
     response = t.render(c)
     return HttpResponse(response)
+
 
 def without_tz(request):
     """

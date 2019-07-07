@@ -36,8 +36,8 @@ Quick start
 link](http://geolite.maxmind.com/download/geoip/database/GeoLiteCity.dat.gz) because I'm nice) in your settings file:
 
     ```python
-    GEOIP_DATABASE = '/path/to/your/geoip/database/GeoLiteCity.dat'
-    GEOIPV6_DATABASE = '/path/to/your/geoip/database/GeoLiteCityv6.dat'
+    GEOIP_DATABASE = geoipv6
+    GEOIPV6_DATABASE = geoipv6
     ```
 
 1. Enable localtime in your templates.

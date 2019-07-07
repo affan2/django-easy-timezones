@@ -4,6 +4,7 @@ import ipaddress
 import socket
 import re
 
+
 def is_valid_ip(ip_address):
     """ Check Validity of an IP address """
 
@@ -13,6 +14,7 @@ def is_valid_ip(ip_address):
     except ValueError as e:
         return False
 
+
 def is_local_ip(ip_address):
     """ Check if IP is local """
 
@@ -21,6 +23,7 @@ def is_local_ip(ip_address):
         return ip.is_loopback
     except ValueError as e:
         return None
+
 
 def get_ip_address_from_request(request):
     """ Makes the best attempt to get the client's real IP or return the loopback """
