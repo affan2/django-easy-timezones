@@ -166,7 +166,7 @@ class TimezoneTests(TestCase):
             if len(valid) == 0:
                 continue
             self.assertTrue(is_valid_ip(valid))
-            #self.assertTrue(ipaddress.ip_address(u'' + valid))
+            #self.assertTrue(ipaddress.ip_address('' + valid))
 
         invalid_6 = """
 XXXX:XXXX:XXXX:XXXX:XXXX:XXXX:XXXX:XXXX
