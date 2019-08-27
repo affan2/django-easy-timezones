@@ -1,5 +1,6 @@
 from django.core.exceptions import ImproperlyConfigured
 from django.conf import settings
+from django.contrib.auth import get_user_model
 from django.shortcuts import render
 from django.db import models
 from django.test import TestCase, Client
